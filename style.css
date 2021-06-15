@@ -1,0 +1,361 @@
+* {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+/* hides the scrollbar */
+*::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* makes scrollbar invisible */
+}
+
+hr {
+    border-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px;
+    color: white;
+    font-weight: 200;
+}
+
+footer {
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+}
+
+footer>p,
+footer>nav>a {
+    color: white;
+    font-size: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* navbar CSS */
+#nav-name {
+    font-weight: 500;
+}
+
+/* intro CSS */
+#introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('images/setup/setup1.jpeg');
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #intro-container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        -webkit-backdrop-filter: blur(3.4px);
+        backdrop-filter: blur(3.4px);
+    }
+}
+
+#intro-container>img {
+    margin-top: -85px;
+    width: 400px;
+}
+
+#intro {
+    color: white;
+    font-size: 5.5vw;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 200px;
+}
+
+.btn {
+    margin-bottom: 85px;
+}
+
+/* about CSS */
+#about {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212529;
+}
+
+#about>h1 {
+    margin-top: 40px;
+}
+
+#about-me-container {
+    width: 90vw;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    background-color: #343a40;
+}
+
+#left {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+#left>img {
+    width: 250px;
+    height: 280px;
+    margin-top: 20px;
+    object-fit: cover;
+    border: 1.7px solid white;
+}
+
+#left>h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#social-media-container {
+    width: 180px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    /* background-color: chocolate; */
+}
+
+#social-media-container>a {
+    text-decoration: none;
+}
+
+#social-media-container>a:hover {
+    opacity: 0.5;
+}
+
+#social-media-container>a>img {
+    width: 25px;
+    height: 25px;
+}
+
+#right {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    /* background-color: bisque; */
+}
+
+#about-me-content {
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+    line-height: 2;
+    /* background-color: blue; */
+}
+
+/* resume CSS */
+#resume {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212529;
+    padding-bottom: 50px;
+}
+
+#resume>button {
+    margin-bottom: 20px;
+}
+
+#resume-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #343a40;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+
+#ucd-container,
+#dvc-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: cornflowerblue; */
+}
+
+#ucd,
+#dvc {
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+}
+
+#ucd>img,
+#dvc>img {
+    width: 185px;
+    height: 185px;
+}
+
+.relevant-courses {
+    width: 60vw;
+    display: flex;
+    font-size: 16px;
+    /* background-color: burlywood; */
+}
+
+.relevant-courses>ul li,
+#iet-dc>ul li,
+#cliq-intern>ul li,
+.card-body>ul li {
+    color: white;
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#work-experience {
+    display: flex;
+    flex-direction: column;
+    /* background-color: burlywood; */
+}
+
+#iet-dc,
+#cliq-intern {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    /* background-color: cadetblue; */
+}
+
+#iet-dc>h6,
+#cliq-intern>h6,
+.card-title {
+    font-weight: 500;
+}
+
+#iet-dc>img {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#cliq-intern>img {
+    width: 130px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+/* skills CSS */
+#skills {
+    width: 100vw;
+    padding-bottom: 40px;
+    background-color: #212529;
+}
+
+.progress {
+    margin: 20px;
+}
+
+.skill {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* projects CSS */
+#projects {
+    width: 100vw;
+    background-color: #212529;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+#carousel-1,
+#carousel-2 {
+    width: 20vw;
+}
+
+#carousel-1>a>span,
+#carousel-2>a>span,
+#carousel-3>a>span,
+#carousel-4>a>span,
+#carousel-5>a>span {
+    background-color: #212529;
+}
+
+.pomocon-links {
+    display: flex;
+    flex-wrap: wrap
+}
+
+/* responsive CSS */
+@media (max-width: 780px) {
+    #down-btn {
+        display: none;
+    }
+
+    /* about responsive CSS */
+    #about-me-container {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 90vw;
+    }
+
+    #right {
+        width: 90vw;
+    }
+
+    /* resume responsive CSS */
+    #ucd,
+    #dvc {
+        padding-right: 0;
+        flex-direction: column;
+    }
+
+    .relevant-courses {
+        flex-direction: column;
+    }
+
+    #carousel-1,
+    #carousel-2 {
+        width: 40vw;
+    }
+}
